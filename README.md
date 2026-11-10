@@ -7,7 +7,7 @@ A small, browser-based exercise for building a Linktree-style profile page with 
 - `start-exercise.html` — unstyled starter page.
 - `end-solution.html` — completed example, including a shared Tailwind component class for the links.
 - `index.html` — the page browsers and static hosts (such as GitHub Pages) open by default. It currently matches `end-solution.html`, and it's the file to edit when you make the page your own.
-- `linktree-tailwind-step-by-step.md` — the eight-step tutorial and styling extensions.
+- [`docs/linktree-tailwind-step-by-step.md`](docs/linktree-tailwind-step-by-step.md) — the eight-step tutorial and styling extensions.
 
 ## Get started
 
