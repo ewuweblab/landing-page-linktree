@@ -4,19 +4,26 @@ A small, browser-based exercise for building a Linktree-style profile page with 
 
 ## Project files
 
-- `index-start-exercise.html` — unstyled starter page.
-- `index-end-soltuion.html` — completed example, including a shared Tailwind component class for the links.
+- `start-exercise.html` — unstyled starter page.
+- `end-solution.html` — completed example, including a shared Tailwind component class for the links.
+- `index.html` — the page browsers and static hosts (such as GitHub Pages) open by default. It currently matches `end-solution.html`, and it's the file to edit when you make the page your own.
 - `linktree-tailwind-step-by-step.md` — the eight-step tutorial and styling extensions.
 
 ## Get started
 
-No package installation or build step is needed. Open `index-start-exercise.html` in a browser to see the starter page, then follow the tutorial. To view the finished example, open `index-end-soltuion.html`.
+No package installation or build step is needed. Open `start-exercise.html` in a browser to see the starter page, then follow the tutorial. The tutorial has you work in `index.html`: copy the starter markup into it (or copy `start-exercise.html` over it) before Step 1. To view the finished example, open `end-solution.html`.
 
-Both HTML pages load Tailwind CSS v4 from jsDelivr, so an internet connection is required for the styles to load. The browser CDN is convenient for this exercise; for a production project, use a local Tailwind build instead.
+All the styled pages load Tailwind CSS v4 from jsDelivr, so an internet connection is required for the styles to load. The browser CDN is convenient for this exercise; for a production project, use a local Tailwind build instead.
+
+## Solution vs. tutorial
+
+The “Completed solution” section of the tutorial repeats the full class list on every link. `end-solution.html` goes one step further and applies Extension 1 from the tutorial: the shared button styles live in a `.link` class defined with `@apply` in a `<style type="text/tailwindcss">` block, and each link uses `class="link"`. Both versions render the same page.
 
 ## Make it yours
 
-In the HTML, replace “Your Name” and the bio, choose an avatar, and update the link URLs and labels. Replace `you@example.com` in the `mailto:` link with your email address. The `#` links are placeholders and should be replaced with real destinations.
+In `index.html`, replace “Your Name” in the `<title>` and heading, rewrite the bio, choose an avatar, and update the link URLs and labels. Replace `you@example.com` in the `mailto:` link with your email address. The `#` links are placeholders and should be replaced with real destinations.
+
+To change every button at once, edit the `.link` class in the `<style>` block rather than the individual links.
 
 ## Accessibility
 
